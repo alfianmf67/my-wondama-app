@@ -1,0 +1,32 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWUiOiJhbGZpYW4iLCJlbWFpbCI6ImFsZmlhbkBnbWFpbC5jb20iLCJpYXQiOjE3MDI3ODM3NjQsImV4cCI6MTcwMjc4Mzc3OX0.VzNLxlX1baU_75vwmdsOMBkXnuumcwMFJPHfrbFrOho
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "alfian",
+    "email" : "alfian@gmail.com",
+    "password" : "123456",
+    "role": "admin"
+    "confPassword" : "123456"
+}
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "alfian@gmail.com",
+    "password" : "123456"
+}
+
+###
+
+
+GET  http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
